@@ -14,7 +14,7 @@ export const dockApps: DockApp[] = [
   {
     id: "about",
     name: "About Me",
-    icon: "/icons/contacts_1024x1024x32.png", // macOS Contacts icon
+    icon: `${import.meta.env.BASE_URL || '/'}icons/contacts_1024x1024x32.png`, // macOS Contacts icon
     windowTitle: "About Me",
     defaultPosition: { x: 120, y: 60 },
     defaultSize: { width: 680, height: 450 },
@@ -22,7 +22,7 @@ export const dockApps: DockApp[] = [
   {
     id: "skills",
     name: "Skills",
-    icon: "/icons/terminal_1024x1024x32.png", // macOS Terminal icon
+    icon: `${import.meta.env.BASE_URL || '/'}icons/terminal_1024x1024x32.png`, // macOS Terminal icon
     windowTitle: "Skills",
     defaultPosition: { x: 160, y: 80 },
     defaultSize: { width: 720, height: 520 },
@@ -30,7 +30,7 @@ export const dockApps: DockApp[] = [
   {
     id: "experience",
     name: "Experience",
-    icon: "/icons/finder_1024x1024x32.png", // macOS Finder icon
+    icon: `${import.meta.env.BASE_URL || '/'}icons/finder_1024x1024x32.png`, // macOS Finder icon
     windowTitle: "Experience",
     defaultPosition: { x: 200, y: 50 },
     defaultSize: { width: 700, height: 500 },
@@ -38,7 +38,7 @@ export const dockApps: DockApp[] = [
   {
     id: "projects",
     name: "Projects",
-    icon: "/icons/xcode_1024x1024x32.png", // macOS Xcode icon for projects
+    icon: `${import.meta.env.BASE_URL || '/'}icons/xcode_1024x1024x32.png`, // macOS Xcode icon for projects
     windowTitle: "Projects",
     defaultPosition: { x: 140, y: 70 },
     defaultSize: { width: 760, height: 500 },
@@ -46,7 +46,7 @@ export const dockApps: DockApp[] = [
   {
     id: "certifications",
     name: "Certifications",
-    icon: "/icons/books_1024x1024x32.png", // macOS Books icon for education
+    icon: `${import.meta.env.BASE_URL || '/'}icons/books_1024x1024x32.png`, // macOS Books icon for education
     windowTitle: "Certifications & Education",
     defaultPosition: { x: 180, y: 90 },
     defaultSize: { width: 700, height: 480 },
@@ -54,7 +54,7 @@ export const dockApps: DockApp[] = [
   {
     id: "blog",
     name: "Blog",
-    icon: "/icons/safari_1024x1024x32.png", // macOS Safari icon
+    icon: `${import.meta.env.BASE_URL || '/'}icons/safari_1024x1024x32.png`, // macOS Safari icon
     windowTitle: "Blog & Articles",
     defaultPosition: { x: 220, y: 65 },
     defaultSize: { width: 650, height: 460 },
@@ -62,7 +62,7 @@ export const dockApps: DockApp[] = [
   {
     id: "contact",
     name: "Contact",
-    icon: "/icons/mail_1024x1024x32.png", // macOS Mail icon
+    icon: `${import.meta.env.BASE_URL || '/'}icons/mail_1024x1024x32.png`, // macOS Mail icon
     windowTitle: "Contact Me",
     defaultPosition: { x: 250, y: 100 },
     defaultSize: { width: 700, height: 440 },
@@ -70,7 +70,7 @@ export const dockApps: DockApp[] = [
   {
     id: "terminal",
     name: "Terminal",
-    icon: "/icons/terminal_1024x1024x32.png", // Use same terminal icon
+    icon: `${import.meta.env.BASE_URL || '/'}icons/terminal_1024x1024x32.png`, // Use same terminal icon
     windowTitle: "Terminal",
     defaultPosition: { x: 180, y: 110 },
     defaultSize: { width: 640, height: 400 },
