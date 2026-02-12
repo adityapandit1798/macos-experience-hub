@@ -1,12 +1,22 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import TopBar from "@/components/TopBar";
+import Dock from "@/components/Dock";
+import wallpaper from "@/assets/wallpaper.jpg";
 
 const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
+    <div className="relative w-screen h-screen overflow-hidden select-none">
+      {/* Wallpaper */}
+      <img
+        src={wallpaper}
+        alt="Desktop wallpaper"
+        className="absolute inset-0 w-full h-full object-cover"
+      />
+
+      {/* Top Menu Bar */}
+      <TopBar />
+
+      {/* Dock */}
+      <Dock />
     </div>
   );
 };
