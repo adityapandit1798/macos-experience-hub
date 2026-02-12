@@ -1,17 +1,11 @@
 import { Award } from "lucide-react";
 
 const certifications = [
-  { name: "AWS Solutions Architect – Professional", issuer: "Amazon Web Services", date: "2023", color: "from-orange-500 to-amber-500" },
-  { name: "Certified Kubernetes Administrator (CKA)", issuer: "CNCF", date: "2022", color: "from-blue-600 to-indigo-500" },
-  { name: "Azure Solutions Architect Expert", issuer: "Microsoft", date: "2022", color: "from-cyan-500 to-blue-500" },
-  { name: "Google Cloud Professional Architect", issuer: "Google Cloud", date: "2021", color: "from-green-500 to-emerald-500" },
-  { name: "HashiCorp Terraform Associate", issuer: "HashiCorp", date: "2021", color: "from-purple-500 to-violet-500" },
-  { name: "AWS DevOps Engineer – Professional", issuer: "Amazon Web Services", date: "2020", color: "from-orange-500 to-yellow-500" },
+  { name: "AWS Certified Solutions Architect – Associate", issuer: "Amazon Web Services", date: "2024", color: "from-orange-500 to-amber-500" },
 ];
 
 const education = [
-  { degree: "M.S. Computer Science", school: "Stanford University", year: "2016", focus: "Distributed Systems & Cloud Computing" },
-  { degree: "B.S. Computer Engineering", school: "UC Berkeley", year: "2014", focus: "Systems & Networking" },
+  { degree: "Bachelor of Engineering (B.E.) in Computer Science and Engineering", school: "Pune University", year: "2020", focus: "" },
 ];
 
 const CertificationsSection = () => (
@@ -41,7 +35,7 @@ const CertificationsSection = () => (
             <div>
               <h3 className="font-semibold">{edu.degree}</h3>
               <p className="text-sm text-blue-400">{edu.school}</p>
-              <p className="text-xs text-white/40 mt-1">{edu.focus}</p>
+              {edu.focus && <p className="text-xs text-white/40 mt-1">{edu.focus}</p>}
             </div>
             <span className="text-xs text-white/40">{edu.year}</span>
           </div>

@@ -92,6 +92,34 @@
     transform: translateY(-8px) scale(1.15);
   }
 
+  /* macOS Dock Magnifying Animation */
+  .dock-glass:hover .dock-icon {
+    transform: translateY(-8px) scale(1.15);
+  }
+
+  .dock-glass:hover .dock-icon img {
+    transform: scale(1.25);
+  }
+
+  /* Magnifying effect for neighboring icons */
+  .dock-glass:hover .dock-icon:hover {
+    transform: translateY(-12px) scale(1.3);
+    z-index: 10;
+  }
+
+  .dock-glass:hover .dock-icon:hover img {
+    transform: scale(1.4);
+  }
+
+  /* Smooth transition for all dock interactions */
+  .dock-glass .dock-icon {
+    transition: all 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+
+  .dock-glass .dock-icon img {
+    transition: transform 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+
   .mac-window {
     background: rgba(30, 30, 30, 0.85);
     backdrop-filter: blur(40px) saturate(180%);

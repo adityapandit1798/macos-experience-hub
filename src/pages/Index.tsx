@@ -1,6 +1,7 @@
 import { useState, useCallback } from "react";
 import TopBar from "@/components/TopBar";
 import Dock from "@/components/Dock";
+import ContactWidget from "@/components/ContactWidget";
 import { dockApps } from "@/components/Dock";
 import MacWindow from "@/components/MacWindow";
 import AboutSection from "@/components/sections/AboutSection";
@@ -59,6 +60,7 @@ const Index = () => {
     <div className="relative w-screen h-screen overflow-hidden select-none">
       <img src={wallpaper} alt="Desktop wallpaper" className="absolute inset-0 w-full h-full object-cover" />
       <TopBar />
+      <ContactWidget />
 
       {/* Windows */}
       {dockApps.map((app) => {
@@ -72,7 +74,7 @@ const Index = () => {
             isOpen={openWindows.has(app.id)}
             onClose={() => closeWindow(app.id)}
             onFocus={() => focusWindow(app.id)}
-            zIndex={10 + windowOrder.indexOf(app.id)}
+            zIndex={100 + windowOrder.indexOf(app.id)}
             defaultPosition={app.defaultPosition}
             defaultSize={app.defaultSize}
           >

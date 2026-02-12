@@ -11,11 +11,10 @@ const ContactSection = () => {
         <div className="space-y-4">
           <div className="space-y-3">
             {[
-              { icon: Mail, label: "Email", value: "john@cloudeng.dev" },
-              { icon: MapPin, label: "Location", value: "San Francisco, CA" },
-              { icon: Github, label: "GitHub", value: "github.com/johndoe" },
-              { icon: Linkedin, label: "LinkedIn", value: "linkedin.com/in/johndoe" },
-              { icon: Globe, label: "Website", value: "cloudeng.dev" },
+              { icon: Mail, label: "Email", value: "pandit.aditya1798@gmail.com" },
+              { icon: MapPin, label: "Location", value: "Pune, India" },
+              { icon: Github, label: "Phone", value: "+91 7*********" },
+              { icon: Linkedin, label: "LinkedIn", value: "linkedin.com/in/aditya-pandit98" },
             ].map((item) => (
               <div key={item.label} className="flex items-center gap-3 bg-white/5 rounded-lg p-3 hover:bg-white/8 transition-colors cursor-pointer">
                 <item.icon className="w-4 h-4 text-blue-400 shrink-0" />
